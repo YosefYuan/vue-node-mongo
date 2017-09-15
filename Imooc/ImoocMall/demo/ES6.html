@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6Demo演示</title>
+    <style>
+        .log{
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>ES6Demo演示</h2>
+    <div id="log" class="log"></div>
+    <script>
+        var str = `
+            console.log("a" + a);
+            var a = 1;
+            console.log("b" + b);
+            let b = 1;
+        `;
+        printLog(str);
+
+        function printLog(str) {
+            document.getElementById('log').innerText = str;
+        }
+    </script>
+</body>
+</html>
